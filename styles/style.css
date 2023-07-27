@@ -12,8 +12,8 @@
 }
 
 :root {
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
+    --bg-color: #000;
+    --second-bg-color: #4D4646;
     --text-color: #ededed;
     --main-color: #00FFCA;
 }
@@ -26,6 +26,27 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+}
+
+canvas {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.form {
+    color: #6cff6c;
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(225, 101, 230);
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(59, 128, 24, 0.7);
 }
 
 .header {
